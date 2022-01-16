@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LeetCode Application</title>
     <link rel="stylesheet" href="script.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="UTF-8"></script>
 </head>
 <body>
     <div>
@@ -37,7 +38,7 @@
                           <li><span>Beginner</span></li>
                         </ul>
                         <ul class="bars">
-                          <li><div class="bar" data-percentage="50"></div><span>Arrays</span></li>
+                          <li><div class="bar" id = "bar-arrays" data-percentage="50"></div><span id = "arrays">Arrays</span></li>
                           <li><div class="bar" data-percentage="45"></div><span>Linked Lists</span></li>
                           <li><div class="bar" data-percentage="60"></div><span>Stacks</span></li>
                           <li><div class="bar" data-percentage="55"></div><span>Queues</span></li>
@@ -55,11 +56,10 @@
             </div>
         </div>
         <!-- Sign up form -->
-        <div class="analytics" id ="analytics-button">
+        <div class="analytics">
             <div class= "analytics-container">
                 <div class= "analytics-title">Add an input</div>
                 <form action="/" method = "GET">
-                    <div class="error"></div>
                           <!-- Question Name -->
                           <div class="question">
                               <label for="question-name">Question Title:</label><br>
@@ -109,19 +109,19 @@
 
             <div class="services__card">
                 <h2>Dynamic Programming</h2>
-                <div class="services__btn" onclick="window.location.href='dynamicProgrammingPage.html'">
+                <div class="services__btn" onclick=" window.open('http://google.com','_blank')">
                     <button>Learn More</button></div>
             </div>
 
             <div class="services__card">
-                <h2>Heaps</h2>
-                <div class="services__btn" onclick="window.location.href='heapPage.html'">
+                <h2>Heap</h2>
+                <div class="services__btn" onclick=" window.open('http://google.com','_blank')">
                     <button>Learn More</button></div>
             </div>
 
             <div class="services__card">
-                <h2>Graphs</h2>
-                <div class="services__btn" onclick="window.location.href='graphPage.html'">
+                <h2>Graph</h2>
+                <div class="services__btn" onclick=" window.open('http://google.com','_blank')">
                     <button>Learn More</button></div>
             </div>
 
@@ -131,7 +131,16 @@
     <!-- Footer -->
     
     </div>
-    <script src=app.js></script>
+    <script type="text/javascript">
+        $(function(){
+  $(".bars li .bar").each(function(key, bar){
+    var percentage = $(this).data("percentage");
+    $(this).animate({
+      "height" : percentage = "%"
+    }, 1000)
+  })
+})
+    </script>
 </body>
 </html>
 

@@ -1,4 +1,4 @@
-* {
+ * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -171,7 +171,6 @@
     margin: 0;
     padding: 0;
     display: inline-block;
-    /* display of bullet points */
     width: 900px;
     height: 300px;
 
@@ -187,91 +186,22 @@
 .bars span{
     width: 100%;
     position: absolute;
-    top: 330px;
+    top: 300px;
     text-align: center;
 }
-/* .bar__container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 90%;
-    text-align: center;
-}
-  .chart {
-    width: 100%;
-    height: 300px;
-    display: block;
-  }
-  
-  .numbers {
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    width: 50px;
-    height: 100%;
-    display: inline-block;
-  }
-  
-  .numbers li {
-    list-style: none;
-    height: 150px;
-    position: relative;
-    bottom: 145px;
-  }
-  
-  .numbers span {
-    font-size: 12px;
-    font-weight: 600;
-    position: absolute;
-    bottom: 0;
-    right: 10px;
-  }
-  
-  .bars {
-    color: #fff;
-    font-size: 12px;
-    font-weight: 600;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    width: 500px;
-    height: 300px;
-    border-radius: 5px;
-  }
-  
-  .bars li {
-    display: table-cell;
-    width: 100px;
-    height: 300px;
-    position: relative;
-  }
-  
-  .bars span {
-      display: inline-block;
-    width: 100%;
-    position: absolute;
-    bottom: -40px;
-    left: 20px;
-    text-align: center;
-  }
 
-  .bar-arrays{
-      display: grid
-  }
-  */
   
   .bars .bar {
     display: block;
     background: linear-gradient(#5ADFBF, #2EC0F9, #9198e5);
     width: 40px;
     position: absolute;
-    bottom: 0;
+    top: 280px;
     margin-left: 70px;
     text-align: center;
     transition: 0.1s;
     transition-property: background, box-shadow;
+    box-shadow: 0 0 10px 0 rgba (23, 192, 235, 0.5);
   }
   
   .bars .bar:hover {
@@ -286,14 +216,14 @@
     position: relative;
     bottom: 20px;
   }
-   */
+
 
 .analytics{
-    background: #000000;
+   background: #000000;
     background: linear-gradient(to right, #161616, #000000);
     padding: 100px 0 100px 0;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
 }
 
 .analytics-container{
@@ -303,7 +233,8 @@
     padding: 25px 30px;
     border-radius: 5px;
     position: relative;
-}
+} 
+
 
 .analytics-container .analytics-title{
     font-size: 25px;
@@ -338,9 +269,9 @@ select{
 
 .button .submit{
     height: 45px
-}
+} 
 
-.services {
+ .services {
     background: #131313;
     display: flex;
     flex-direction: column;
@@ -425,4 +356,4 @@ select{
     transform: scale(1.075);
     transition: 0.3s ease-in;
     cursor: pointer;
-}
+} 
