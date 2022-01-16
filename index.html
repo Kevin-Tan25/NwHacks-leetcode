@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetCode Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="navbar__container">
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="#home" class="navbar__links" id="home-page">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#about" class="navbar__links" id="about-page">About</a>
+                    </li>
+                    <li class="navbar__btn">
+                        <a href="#analytics-button" class="button" id="signup">Try Now</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Hero -->
+        <div class="hero" id="home">
+            <div class="hero__container">
+                <h1 class="hero__heading">Your Analytics</h1>
+                <button class="main__btn"><a href="#">New Input</a></button>
+            </div>
+        </div>
+        <!-- Sign up form -->
+        <div class="analytics" id ="analytics-button">
+            <div class= "analytics-container">
+                <div class= "analytics-title">Add an input</div>
+                <form action="/" method = "GET">
+                    <div class="error"></div>
+                          <!-- Question Name -->
+                          <div class="question">
+                              <label for="question-name">Question Title:</label><br>
+                              <input id="question-name" type="text"
+                              placeholder="Enter question name"  required>
+                          </div>
+                          <!-- Time taken -->
+                          <div class="question">
+                             <label for="time-taken">Time Taken:</label><br>
+                             <input id="time-taken" type="text"
+                             placeholder="Enter time taken" required>
+                         </div>
+                         <!-- Question Difficulty -->
+                         <div class="question">
+                             <label for="question-difficulty">Difficulty Level:</label><br>
+                             <select id="difficulty">
+                                 <option value="select-question-type">Select Question Difficulty</option>
+                                 <option value="easy">Easy</option>
+                                 <option value="medium">Medium</option>
+                                 <option value="hard">Hard</option>
+                             </select>
+                         </div>
+                         <!-- Question Type -->
+                         <div class="question">
+                             <label for="question-type">Question Type:</label><br>
+                             <select id="question-type">
+                                 <option value="select-question-type">Select Question Type</option>
+                                 <option value="dynamic-programming">Dynamic Programming</option>
+                                 <option value="heap">Heap</option>
+                                 <option value="graph">Graph</option>
+                             </select>
+         
+                         </div>
+                         <!-- Button to submit -->
+                         <button class="main__btn"><a href="#">Submit</a></button>
+                 </form>
+            </div>
+        </div>
+
+        <!-- Sections -->
+
+    <!-- Services Section -->
+    <!-- add scroll across feature -->
+    <div class="services" id="services">
+        <h1>Categories</h1>
+        <div class="services__wrapper">
+
+            <div class="services__card">
+                <h2>Dynamic Programming</h2>
+                <div class="services__btn"><button>Learn More</button></div>
+            </div>
+
+            <div class="services__card">
+                <h2>Heap</h2>
+                <div class="services__btn"><button>Learn More</button></div>
+            </div>
+
+            <div class="services__card">
+                <h2>Graph</h2>
+                <div class="services__btn"><button>Learn More</button></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    
+    </div>
+    <script src=app.js></script>
+</body>
+</html>
+
