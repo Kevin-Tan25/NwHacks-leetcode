@@ -196,13 +196,14 @@
     background: linear-gradient(#5ADFBF, #2EC0F9, #9198e5);
     width: 40px;
     position: absolute;
-    top: 280px;
+    bottom: 0px;
     margin-left: 70px;
     text-align: center;
-    transition: 0.1s;
     transition-property: background, box-shadow;
     box-shadow: 0 0 10px 0 rgba (23, 192, 235, 0.5);
+    animation: bar 1.25s cubic-bezier(0.17, 0.67, 0, 1);
   }
+
   
   .bars .bar:hover {
     background: #5ADFBF;
