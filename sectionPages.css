@@ -68,14 +68,17 @@ h3 {
   margin: 20px 0 0 0;
 }
 
+/* easy */
 .post.cyan {
   border-color: #74B665;
 }
 
+/* hard */
 .post.blue {
   border-color: #C95D54;
 }
 
+/* medium */
 .post.pink {
   border-color: #E6B05F;
 }
