@@ -1,0 +1,209 @@
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: helvetica, arial;
+  color: #555E63;
+  line-height: 1.4;
+  background: #000;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  min-height: 100%;
+}
+
+.posts {
+  width: calc(100% - 280px);
+}
+
+.post-sidebar {
+  width: 280px;
+  padding: 25px 40px;
+  box-sizing: border-box;
+  background: #000;
+}
+
+h1 {
+  margin: 40px 40px 10px 40px;
+  padding-bottom: 30px;
+  font-size: 50px;
+  color: #fff;
+  border-bottom: 1px solid #000;
+  line-height: 1;
+  display: inline-block;
+}
+
+h3 {
+  display: inline-block;
+}
+
+.post {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  border-left: 10px solid #E6B05F; 
+  padding: 30px 40px 30px 30px;
+  margin-bottom: 10px;
+}
+
+.post h2 {
+  color: #fff;
+  margin: 0 0 15px 0;
+  line-height: 1;
+  transition: color 400ms ease-in-out;
+}
+
+.date {
+  font-size: 12px;
+  color: #aaa;
+  margin: 0;
+  line-height: 1;
+  transition: all 400ms ease-in-out;
+}
+
+.summary {
+  margin: 20px 0 0 0;
+}
+
+.post.cyan {
+  border-color: #74B665;
+}
+
+.post.blue {
+  border-color: #C95D54;
+}
+
+.post.pink {
+  border-color: #E6B05F;
+}
+
+.post.blue2 {
+  border-color: #C95D54;
+}
+
+.post-sidebar a {
+  display: block;
+  color: #10303A;
+  text-decoration: none;
+  padding: 5px 0;
+  margin: 10px 0;
+  line-height: 1;
+}
+
+.post-sidebar a:hover,
+.post-sidebar a:focus {
+  color: #1377BF;
+}
+
+.post-sidebar a:hover:after,
+.post-sidebar a:focus:after {
+  content: '\02192';
+  margin-left: 15px;
+}
+
+.post-sidebar a.current {
+  color: #E6B05F;
+  font-weight: bold;
+}
+
+.post-sidebar a.current:after {
+  content: '\02192';
+  margin-left: 15px;
+}
+
+.post {
+  position: relative;
+	overflow: hidden;
+  transition: color 400ms ease-in-out;
+}
+
+.post:before {
+	content: "";
+	width: 10px;
+	height: 100%;
+	background: #E6B05F;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+	position: absolute;
+	transition: all 400ms ease-in-out;
+}
+
+.post-inner {
+	position: relative;
+	z-index: 99999;
+}
+
+.post:before {
+  top: 0;
+	left: -10px;
+}
+	
+.post:hover,
+.post:hover h2 {
+  color: #000;
+}
+
+.post:hover .date {
+  color: #000;
+  opacity: 0.5;
+}
+
+.post:hover:before {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  left: 0;
+}
+
+.post.cyan:before {
+  background: #74B665;
+}
+
+.post.blue:before {
+  background: #C95D54;
+}
+
+.post.pink:before {
+  background: #E6B05F;
+}
+
+.post.blue2:before {
+  background: #C95D54;
+}
+
+
+.container {
+  width: 500px;
+  text-align: left;
+  display: inline-block;
+  margin: 40px 40px 10px 40px;
+}
+
+.progress {
+  padding: 6px;
+  background: #5562EB;
+  border-radius: 6px;
+}
+
+.progress-bar {	
+  height: 18px;
+	background-color: #848DF1;  
+  border-radius: 4px; 
+  transition: 0.4s linear;  
+  transition-property: width, background-color;    
+}
+
+.progress-striped .progress-bar { 	
+  background-color: #848DF1; 
+  width: 100%; 
+  animation: progressAnimationStrike 3s;
+}
+
+@keyframes progressAnimationStrike {
+     from { width: 0 }
+     to   { width: 90% }
+}
+ 
